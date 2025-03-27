@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[backend=biber,style=apa]{biblatex}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{import}
+\usepackage{float} % For better control over table placement
+\usepackage{booktabs} % For better table lines
+
+\addbibresource{cite.bib}
+
+\begin{document}
+
+\title{TITLE}
+\author{Name}
+\date{\today}
+\maketitle
+
+\import{sections/}{abstract.tex}
+
+\import{sections/}{introduction.tex}
+
+\import{sections/}{methods.tex}
+
+\import{sections/}{results.tex}
+
+\import{sections/}{discussion.tex}
+
+\import{sections/}{conclusion.tex}
+
+\pagebreak
+\printbibliography{}
+
+\end{document}
